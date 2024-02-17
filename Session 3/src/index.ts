@@ -92,7 +92,7 @@ let sub : MathFunction = (a ,b) => {
     return a-b
 }
 
-interface MathFunction2 { (a:number ,b:number ) : number}
+interface MathFunction2 { (a:number ,b:number ) : number }
 
 let multiply : MathFunction2 = (a ,b) => {
     return a * b
@@ -104,11 +104,13 @@ let voidfn = (a:string) : void  => {
 }
 
 // never return 
-let Neverfn = (a:string) => {
+let Neverfn = (a:string) : never => {
     console.log(a)
     while(true){
         
     }
 }
+
+
 
 
